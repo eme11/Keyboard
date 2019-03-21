@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BindKeyToButton : MonoBehaviour {
 
 	public KeyCode _keyCode;
-	public Button _buttonToBind; 
+	public Button _buttonToBind;
 	// Use this for initialization
 	void Awake()
 	{
