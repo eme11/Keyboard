@@ -9,6 +9,7 @@ public class BindKeyToButton : MonoBehaviour {
 	public Button _buttonToBind;
 	public InputField _seatchBar;
 	public Button _search;
+	public Text _currentKey;
 
 	void Awake()
 	{
@@ -22,6 +23,7 @@ public class BindKeyToButton : MonoBehaviour {
 	void OnClickTask(){
 		Debug.Log ("on click - key");
 		string keyValue = getTextFromButton ();
+		handleFullFading (keyValue);
 		if (isBackSpace (keyValue))
 			handleBackSpace ();
 		else if (isEnter (keyValue)) {
@@ -70,13 +72,10 @@ public class BindKeyToButton : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (_keyCode)) { // when pressing
 			_buttonToBind.onClick.Invoke ();
-		} else if (Input.GetKeyUp (_keyCode)) { // when releasing
-			FadeColor ();
-		} else if (Input.GetKey (_keyCode)) {
+		}else if (Input.GetKey (_keyCode)) {
 			//when holding the key for longer
 			StartDrawing();
 		}
-			
 	}
 
 	void FadeColor()
@@ -86,7 +85,13 @@ public class BindKeyToButton : MonoBehaviour {
 	}
 	void StartDrawing()
 	{
-		Graphic graphic = GetComponent<Graphic> ();
-		graphic.CrossFadeColor (Color.red, _buttonToBind.colors.fadeDuration, true, true);
+		// TO DO : implement later
+	}
+
+	void handleFullFading(string keyValue){
+		Debug.Log ("handle funn fading!");
+		keyValue = keyValue == " " ? keyValue = "'  '" : keyValue;
+		_currentKey.text = keyValue.ToUpper();
+		// WaitForSeconds (1);
 	}
 }
