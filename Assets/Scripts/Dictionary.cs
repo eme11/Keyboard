@@ -23,6 +23,12 @@ public class Dictionary : MonoBehaviour {
 		_content.Add ("world");
 		_content.Add ("foo");
 		_content.Add ("bar");
+		_content.Add ("baaar");
+		_content.Add ("barr");
+		_content.Add ("babbr");
+		_content.Add ("babyy");
+		_content.Add ("barrrrrr");
+		_content.Add ("baar");
 
 		_button = GetComponent<Button> ();
 		_button.onClick.AddListener(OnClickTask);
