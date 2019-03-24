@@ -51,6 +51,7 @@ public class Dictionary : MonoBehaviour {
 		// TO DO : make button add
 		string word = _input.text;
 		AddToDictionary (word);
+		_input.text = "";
 	}
 
 	private void ClearTextFieldOfBUtton(Button button){

@@ -9,10 +9,12 @@ public class BindKeyToButton : MonoBehaviour {
 	public Button _buttonToBind;
 	public InputField _seatchBar;
 	public Text _currentKey;
+	public Button _addToDictionary;
 
 	void Awake()
 	{
 		_buttonToBind = GetComponent<Button> ();
+		_addToDictionary = GetComponent<Button> ();
 	}
 	void Start () {
 		_buttonToBind.onClick.AddListener(OnClickTask);
@@ -30,10 +32,10 @@ public class BindKeyToButton : MonoBehaviour {
 		} else _seatchBar.text += keyValue;
 
 		string word = _seatchBar.text.ToString ();
-		IsEndOfTheWord (word);
+		HandleEndOfTheWord (word);
 	}
 
-	private bool IsEndOfTheWord(string word){
+	private string GetLastCharacter(string word){
 		int length = word.Length;
 		Debug.Log ("length = " + length);
 		string lastChar = "";
@@ -51,9 +53,39 @@ public class BindKeyToButton : MonoBehaviour {
 			lastChar = word.Substring (tmp);
 			break;
 		}
-		Debug.Log ("Last char : " + lastChar);
-		Debug.Log ("word : " + word);
-		return false;
+
+		return lastChar;
+	}
+
+	private void HandleEndOfTheWord(string word){
+		string lastChar = GetLastCharacter (word);
+		if (IsSpecialCase (lastChar)) {
+			Debug.Log ("should add to dictionary");
+			// _addToDictionary.onClick.Invoke ();
+		}
+	}
+
+	private bool IsSpecialCase(string special){
+		if (special == "-")
+			return true;
+		else if (special == "*")
+			return true;
+		else if (special == "!")
+			return true;
+		else if (special == ":")
+			return true;
+		else if (special == ";")
+			return true;
+		else if (special == ",")
+			return true;
+		else if (special == ".")
+			return true;
+		else if (special == "?")
+			return true;
+		else if (special == " ")
+			return true;
+		else
+			return false;
 	}
 
 	private bool isBackSpace(string keyVal){
@@ -77,6 +109,7 @@ public class BindKeyToButton : MonoBehaviour {
 
 	private void handleEnter(){
 		Debug.Log ("handle enter");
+		_addToDictionary.onClick.Invoke ();
 	}
 
 	private string getTextFromButton(){

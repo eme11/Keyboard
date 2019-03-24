@@ -123,7 +123,6 @@ GameObject:
   - component: {fileID: 11894070}
   - component: {fileID: 11894073}
   - component: {fileID: 11894072}
-  - component: {fileID: 11894071}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -149,19 +148,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &11894071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 11894069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbf58c8088745848b83d057c8ad4fd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _suggestion: {fileID: 1639769953}
-  _searchBar: {fileID: 1257172008}
 --- !u!114 &11894072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,7 +345,6 @@ GameObject:
   - component: {fileID: 76603856}
   - component: {fileID: 76603859}
   - component: {fileID: 76603858}
-  - component: {fileID: 76603857}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -385,19 +370,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &76603857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 76603855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbf58c8088745848b83d057c8ad4fd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _suggestion: {fileID: 605889917}
-  _searchBar: {fileID: 1257172008}
 --- !u!114 &76603858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,7 +493,6 @@ GameObject:
   - component: {fileID: 90646976}
   - component: {fileID: 90646979}
   - component: {fileID: 90646978}
-  - component: {fileID: 90646977}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -547,19 +518,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &90646977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 90646975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbf58c8088745848b83d057c8ad4fd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _suggestion: {fileID: 628658720}
-  _searchBar: {fileID: 1257172008}
 --- !u!114 &90646978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,7 +567,6 @@ GameObject:
   - component: {fileID: 91004110}
   - component: {fileID: 91004113}
   - component: {fileID: 91004112}
-  - component: {fileID: 91004111}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -635,19 +592,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &91004111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 91004109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbf58c8088745848b83d057c8ad4fd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _suggestion: {fileID: 2097746740}
-  _searchBar: {fileID: 1257172008}
 --- !u!114 &91004112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,7 +641,6 @@ GameObject:
   - component: {fileID: 98484350}
   - component: {fileID: 98484353}
   - component: {fileID: 98484352}
-  - component: {fileID: 98484351}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -723,19 +666,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &98484351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 98484349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbf58c8088745848b83d057c8ad4fd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _suggestion: {fileID: 1956890520}
-  _searchBar: {fileID: 1257172008}
 --- !u!114 &98484352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,8 +831,8 @@ MonoBehaviour:
   _keyCode: 111
   _buttonToBind: {fileID: 112818252}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &112818252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,8 +959,8 @@ MonoBehaviour:
   _keyCode: 98
   _buttonToBind: {fileID: 114096212}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &114096212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,8 +1087,8 @@ MonoBehaviour:
   _keyCode: 271
   _buttonToBind: {fileID: 120091594}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &120091594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1576,8 +1506,8 @@ MonoBehaviour:
   _keyCode: 114
   _buttonToBind: {fileID: 283028941}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &283028941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1704,8 +1634,8 @@ MonoBehaviour:
   _keyCode: 50
   _buttonToBind: {fileID: 302906245}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &302906245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1906,8 +1836,8 @@ MonoBehaviour:
   _keyCode: 100
   _buttonToBind: {fileID: 321791261}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &321791261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,8 +1964,8 @@ MonoBehaviour:
   _keyCode: 108
   _buttonToBind: {fileID: 345954448}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &345954448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2162,8 +2092,8 @@ MonoBehaviour:
   _keyCode: 106
   _buttonToBind: {fileID: 360856239}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &360856239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2601,8 +2531,8 @@ MonoBehaviour:
   _keyCode: 120
   _buttonToBind: {fileID: 462304801}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &462304801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2824,8 +2754,8 @@ MonoBehaviour:
   _keyCode: 119
   _buttonToBind: {fileID: 466383668}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &466383668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3731,8 +3661,8 @@ MonoBehaviour:
   _keyCode: 56
   _buttonToBind: {fileID: 614613635}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &614613635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4354,8 +4284,8 @@ MonoBehaviour:
   _keyCode: 48
   _buttonToBind: {fileID: 743723844}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &743723844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4482,8 +4412,8 @@ MonoBehaviour:
   _keyCode: 44
   _buttonToBind: {fileID: 749517028}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &749517028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4832,8 +4762,8 @@ MonoBehaviour:
   _keyCode: 51
   _buttonToBind: {fileID: 812320693}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &812320693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5034,8 +4964,8 @@ MonoBehaviour:
   _keyCode: 8
   _buttonToBind: {fileID: 823421395}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &823421395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5568,8 +5498,8 @@ MonoBehaviour:
   _keyCode: 59
   _buttonToBind: {fileID: 910218726}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &910218726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5770,8 +5700,8 @@ MonoBehaviour:
   _keyCode: 46
   _buttonToBind: {fileID: 995984889}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &995984889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5898,8 +5828,8 @@ MonoBehaviour:
   _keyCode: 121
   _buttonToBind: {fileID: 1000162617}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1000162617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6151,8 +6081,8 @@ MonoBehaviour:
   _keyCode: 97
   _buttonToBind: {fileID: 1018021822}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1018021822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6427,8 +6357,8 @@ MonoBehaviour:
   _keyCode: 112
   _buttonToBind: {fileID: 1098028233}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1098028233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6589,8 +6519,8 @@ MonoBehaviour:
   _keyCode: 52
   _buttonToBind: {fileID: 1140731534}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1140731534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6717,8 +6647,8 @@ MonoBehaviour:
   _keyCode: 116
   _buttonToBind: {fileID: 1151820958}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1151820958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6993,8 +6923,8 @@ MonoBehaviour:
   _keyCode: 58
   _buttonToBind: {fileID: 1201736587}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1201736587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7195,8 +7125,8 @@ MonoBehaviour:
   _keyCode: 42
   _buttonToBind: {fileID: 1225259808}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1225259808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7323,8 +7253,8 @@ MonoBehaviour:
   _keyCode: 63
   _buttonToBind: {fileID: 1242700805}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1242700805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7451,8 +7381,8 @@ MonoBehaviour:
   _keyCode: 39
   _buttonToBind: {fileID: 1246812571}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1246812571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7579,8 +7509,8 @@ MonoBehaviour:
   _keyCode: 33
   _buttonToBind: {fileID: 1257166799}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1257166799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7707,7 +7637,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1257172009}
   m_TextComponent: {fileID: 772125100}
   m_Placeholder: {fileID: 20904238}
@@ -7989,8 +7919,8 @@ MonoBehaviour:
   _keyCode: 99
   _buttonToBind: {fileID: 1298916540}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1298916540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8347,8 +8277,8 @@ MonoBehaviour:
   _keyCode: 49
   _buttonToBind: {fileID: 1335280213}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1335280213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8475,8 +8405,8 @@ MonoBehaviour:
   _keyCode: 104
   _buttonToBind: {fileID: 1338966184}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1338966184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8669,7 +8599,6 @@ GameObject:
   - component: {fileID: 1448502245}
   - component: {fileID: 1448502248}
   - component: {fileID: 1448502247}
-  - component: {fileID: 1448502246}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -8695,19 +8624,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1448502246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1448502244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbf58c8088745848b83d057c8ad4fd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _suggestion: {fileID: 1017352657}
-  _searchBar: {fileID: 1257172008}
 --- !u!114 &1448502247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8799,8 +8715,8 @@ MonoBehaviour:
   _keyCode: 122
   _buttonToBind: {fileID: 1461000027}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1461000027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8927,8 +8843,8 @@ MonoBehaviour:
   _keyCode: 354
   _buttonToBind: {fileID: 1471523141}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1471523141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9129,8 +9045,8 @@ MonoBehaviour:
   _keyCode: 118
   _buttonToBind: {fileID: 1507409978}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1507409978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9257,8 +9173,8 @@ MonoBehaviour:
   _keyCode: 107
   _buttonToBind: {fileID: 1554105202}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1554105202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9521,8 +9437,8 @@ MonoBehaviour:
   _keyCode: 105
   _buttonToBind: {fileID: 1565059946}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1565059946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9723,8 +9639,8 @@ MonoBehaviour:
   _keyCode: 113
   _buttonToBind: {fileID: 1620910975}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1620910975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10050,8 +9966,8 @@ MonoBehaviour:
   _keyCode: 115
   _buttonToBind: {fileID: 1683196775}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1683196775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10260,8 +10176,8 @@ MonoBehaviour:
   _keyCode: 117
   _buttonToBind: {fileID: 1699311234}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1699311234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10388,8 +10304,8 @@ MonoBehaviour:
   _keyCode: 109
   _buttonToBind: {fileID: 1713941756}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1713941756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10590,8 +10506,8 @@ MonoBehaviour:
   _keyCode: 103
   _buttonToBind: {fileID: 1794391673}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1794391673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11264,8 +11180,8 @@ MonoBehaviour:
   _keyCode: 53
   _buttonToBind: {fileID: 1923163612}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1923163612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11517,8 +11433,8 @@ MonoBehaviour:
   _keyCode: 55
   _buttonToBind: {fileID: 1958866283}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &1958866283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11867,8 +11783,8 @@ MonoBehaviour:
   _keyCode: 102
   _buttonToBind: {fileID: 2015183785}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &2015183785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12010,7 +11926,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Search
+  m_Text: Add to dictionary
 --- !u!222 &2020843406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12143,8 +12059,8 @@ MonoBehaviour:
   _keyCode: 32
   _buttonToBind: {fileID: 2036695183}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &2036695183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12530,7 +12446,7 @@ GameObject:
   - component: {fileID: 2070061965}
   - component: {fileID: 2070061964}
   m_Layer: 5
-  m_Name: SearchForWord
+  m_Name: AddToDictionary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12567,7 +12483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _input: {fileID: 1257172008}
-  _button: {fileID: 2070061965}
+  _addNewWord: {fileID: 0}
   _suggestion1: {fileID: 2097746740}
   _suggestion2: {fileID: 605889917}
   _suggestion3: {fileID: 1639769953}
@@ -12700,8 +12616,8 @@ MonoBehaviour:
   _keyCode: 57
   _buttonToBind: {fileID: 2073516535}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &2073516535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12828,8 +12744,8 @@ MonoBehaviour:
   _keyCode: 110
   _buttonToBind: {fileID: 2073790504}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &2073790504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13223,8 +13139,8 @@ MonoBehaviour:
   _keyCode: 54
   _buttonToBind: {fileID: 2114521114}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &2114521114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13425,8 +13341,8 @@ MonoBehaviour:
   _keyCode: 101
   _buttonToBind: {fileID: 2128799023}
   _seatchBar: {fileID: 1257172008}
-  _search: {fileID: 2070061965}
   _currentKey: {fileID: 575565600}
+  _addToDictionary: {fileID: 2070061965}
 --- !u!114 &2128799023
 MonoBehaviour:
   m_ObjectHideFlags: 0
