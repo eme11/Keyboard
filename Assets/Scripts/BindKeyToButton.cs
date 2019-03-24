@@ -70,7 +70,7 @@ public class BindKeyToButton : MonoBehaviour {
 	}
 
 	void Update () {
-		if (Input.GetKeyDown (_keyCode)) { // when pressing
+				if (Input.GetKeyDown (_keyCode)) { // when pressing
 			_buttonToBind.onClick.Invoke ();
 		}else if (Input.GetKey (_keyCode)) {
 			//when holding the key for longer
