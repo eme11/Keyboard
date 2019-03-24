@@ -8,8 +8,10 @@ public class SuggestionChooser : MonoBehaviour {
 	public Button _suggestion;
 	public InputField _searchBar;
 	// Use this for initialization
-	void Start () {
+	void Awake(){
 		_suggestion = GetComponent<Button> ();
+	}
+	void Start () {
 		_suggestion.onClick.AddListener(OnClickTask);
 		_searchBar = GameObject.Find ("SearchWord").GetComponent<InputField> ();
 	}

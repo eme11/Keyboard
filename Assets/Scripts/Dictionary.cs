@@ -34,6 +34,16 @@ public class Dictionary : MonoBehaviour {
 		_button.onClick.AddListener(OnClickTask);
 
 		_input = GameObject.Find ("SearchWord").GetComponent<InputField> ();
+		_input.onValueChanged.AddListener (delegate {
+			OnInputFieldTask ();
+		});
+	}
+
+	void OnInputFieldTask(){
+		string word = _input.text;
+		List<string> possibileMatches = findSuggestions (word);
+		// Debug.Log ("1." + possibileMatches [0]);
+		handleUIElements (possibileMatches);
 	}
 
 	void OnClickTask()
@@ -98,7 +108,7 @@ public class Dictionary : MonoBehaviour {
 		List<string> possibleMatches = new List<string> ();
 		int length = word.Length;
 		foreach (string currentWord in _content) {
-			if (currentWord.Substring(0,length).Equals(word))
+			if (currentWord.Substring(0,length < currentWord.Length ? length : currentWord.Length ).Equals(word))
 			{
 				Debug.Log ("found something");
 				possibleMatches.Add(currentWord);
