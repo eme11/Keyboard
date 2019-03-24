@@ -61,7 +61,7 @@ public class BindKeyToButton : MonoBehaviour {
 		string lastChar = GetLastCharacter (word);
 		if (IsSpecialCase (lastChar)) {
 			Debug.Log ("should add to dictionary");
-			// _addToDictionary.onClick.Invoke ();
+			// _addToDictionary.onClick.Invoke();
 		}
 	}
 
@@ -109,7 +109,7 @@ public class BindKeyToButton : MonoBehaviour {
 
 	private void handleEnter(){
 		Debug.Log ("handle enter");
-		_addToDictionary.onClick.Invoke ();
+		// _addToDictionary.onClick.Invoke ();
 	}
 
 	private string getTextFromButton(){
