@@ -7,7 +7,7 @@ public class Dictionary : MonoBehaviour {
 
 	private List<string> _content;
 	public InputField _input;
-	public Button _button;
+	public Button _addNewWord;
 	public Button _suggestion1;
 	public Button _suggestion2;
 	public Button _suggestion3;
@@ -30,8 +30,8 @@ public class Dictionary : MonoBehaviour {
 		_content.Add ("barrrrrr");
 		_content.Add ("baar");
 
-		_button = GetComponent<Button> ();
-		_button.onClick.AddListener(OnClickTask);
+		_addNewWord = GetComponent<Button> ();
+		_addNewWord.onClick.AddListener(OnClickTask);
 
 		_input = GameObject.Find ("SearchWord").GetComponent<InputField> ();
 		_input.onValueChanged.AddListener (delegate {
@@ -48,10 +48,9 @@ public class Dictionary : MonoBehaviour {
 
 	void OnClickTask()
 	{
+		// TO DO : make button add
 		string word = _input.text;
-		List<string> possibileMatches = findSuggestions (word);
-		Debug.Log ("1." + possibileMatches [0]);
-		handleUIElements (possibileMatches);
+		AddToDictionary (word);
 	}
 
 	private void ClearTextFieldOfBUtton(Button button){
@@ -118,6 +117,11 @@ public class Dictionary : MonoBehaviour {
 	}
 
 	void Update(){
+	}
+
+	void AddToDictionary(string newWord){
+		//To do : save to file as well
+		_content.Add (newWord);
 	}
 
 }

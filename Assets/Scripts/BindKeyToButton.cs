@@ -8,7 +8,6 @@ public class BindKeyToButton : MonoBehaviour {
 	public KeyCode _keyCode;
 	public Button _buttonToBind;
 	public InputField _seatchBar;
-	public Button _search;
 	public Text _currentKey;
 
 	void Awake()
@@ -52,7 +51,6 @@ public class BindKeyToButton : MonoBehaviour {
 
 	private void handleEnter(){
 		Debug.Log ("handle enter");
-		//_search.onClick.Invoke ();
 	}
 
 	private string getTextFromButton(){
