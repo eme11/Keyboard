@@ -27,7 +27,33 @@ public class BindKeyToButton : MonoBehaviour {
 			handleBackSpace ();
 		else if (isEnter (keyValue)) {
 			handleEnter ();
-		} else _seatchBar.text += keyValue;			
+		} else _seatchBar.text += keyValue;
+
+		string word = _seatchBar.text.ToString ();
+		IsEndOfTheWord (word);
+	}
+
+	private bool IsEndOfTheWord(string word){
+		int length = word.Length;
+		Debug.Log ("length = " + length);
+		string lastChar = "";
+		switch (length) {
+		case 0:
+			Debug.Log ("is end of the word: empty");
+			break;
+		case 1:
+			Debug.Log ("is end of the word: only on char");
+			lastChar = word;
+			break;
+		default:
+			Debug.Log ("More than one char");
+			int tmp = length - 1;
+			lastChar = word.Substring (tmp);
+			break;
+		}
+		Debug.Log ("Last char : " + lastChar);
+		Debug.Log ("word : " + word);
+		return false;
 	}
 
 	private bool isBackSpace(string keyVal){
@@ -68,12 +94,15 @@ public class BindKeyToButton : MonoBehaviour {
 	}
 
 	void Update () {
-				if (Input.GetKeyDown (_keyCode)) { // when pressing
+		if (Input.GetKeyDown (_keyCode)) { // when pressing
 			_buttonToBind.onClick.Invoke ();
+		}else if (Input.GetKeyUp(_keyCode)){
+			
 		}else if (Input.GetKey (_keyCode)) {
 			//when holding the key for longer
 			StartDrawing();
 		}
+
 	}
 
 	void FadeColor()
