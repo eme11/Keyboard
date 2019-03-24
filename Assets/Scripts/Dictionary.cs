@@ -8,7 +8,13 @@ public class Dictionary : MonoBehaviour {
 	private List<string> _content;
 	public InputField _input;
 	public Button _button;
-	public Dropdown _suggestions;
+	public Button _suggestion1;
+	public Button _suggestion2;
+	public Button _suggestion3;
+	public Button _suggestion4;
+	public Button _suggestion5;
+	public Button _suggestion6;
+
 	// Use this for initialization
 	void Start () {
 		_content = new List<string> ();
@@ -17,6 +23,12 @@ public class Dictionary : MonoBehaviour {
 		_content.Add ("world");
 		_content.Add ("foo");
 		_content.Add ("bar");
+		_content.Add ("baaar");
+		_content.Add ("barr");
+		_content.Add ("babbr");
+		_content.Add ("babyy");
+		_content.Add ("barrrrrr");
+		_content.Add ("baar");
 
 		_button = GetComponent<Button> ();
 		_button.onClick.AddListener(OnClickTask);
@@ -32,18 +44,48 @@ public class Dictionary : MonoBehaviour {
 		handleUIElements (possibileMatches);
 	}
 
+	private void ClearTextFieldOfBUtton(Button button){
+		Text tmp = button.GetComponentInChildren<Text>();
+		tmp.text = "";
+	}
+
+	private void AddTextToFieldOfButton(Button button, string suggestion){
+		Text tmp = button.GetComponentInChildren<Text>();
+		tmp.text = suggestion;
+	}
+
+	private void clearUI(){
+		ClearTextFieldOfBUtton (_suggestion1);
+		ClearTextFieldOfBUtton (_suggestion2);
+		ClearTextFieldOfBUtton (_suggestion3);
+		ClearTextFieldOfBUtton (_suggestion4);
+		ClearTextFieldOfBUtton (_suggestion5);
+		ClearTextFieldOfBUtton (_suggestion6);
+	}
+
 	void handleUIElements(List<string> dropDown)
 	{
-		if (dropDown.Count <= 0) {
-			return;
-		}
-
 		Debug.Log ("UI");
-		_suggestions.enabled = true;
-		_suggestions.ClearOptions ();
-		_suggestions.AddOptions (dropDown);
-		_suggestions.RefreshShownValue ();
-		_suggestions.Show ();
+		clearUI ();
+
+		int count = 0;
+		foreach (string tmp in dropDown) {
+			++count;
+			if (count == 1)
+				AddTextToFieldOfButton (_suggestion1, tmp);
+			else if (count == 2)
+				AddTextToFieldOfButton (_suggestion2, tmp);
+			else if (count == 3)
+				AddTextToFieldOfButton (_suggestion3, tmp);
+			else if (count == 4)
+				AddTextToFieldOfButton (_suggestion4, tmp);
+			else if (count == 5)
+				AddTextToFieldOfButton (_suggestion5, tmp);
+			else if (count == 6)
+				AddTextToFieldOfButton (_suggestion6, tmp);
+			else
+				break;
+		}
 	}
 		
 
@@ -63,6 +105,9 @@ public class Dictionary : MonoBehaviour {
 			}
 		}
 		return possibleMatches;
+	}
+
+	void Update(){
 	}
 
 }
