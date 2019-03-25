@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/EmeseMathe/Documents/Keyboard/game/game.exe
+C:/Users/EmeseMathe/Documents/Project/Keyboard/App2/App2.exe
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
@@ -114,8 +114,9 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-51649af951d6b44cba9e8ee8ff3bf054 Assembly-CSharp.dll:.Dictionary
-5524fc74fcb1a8fd391fe183efa744c4 Assembly-CSharp.dll:.BindKeyToButton
+f4f23f3a9d9ffc8e84e7f175a06d38a5 Assembly-CSharp.dll:.Dictionary
+1f1c0e3dac9b7c3cd55d479179694040 Assembly-CSharp.dll:.BindKeyToButton
+4494d67641a5f0c2a39108ad160349f7 Assembly-CSharp.dll:.SuggestionChooser
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
