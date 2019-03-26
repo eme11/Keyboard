@@ -8174,7 +8174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0acaa3f6750413f4095295b09c414c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _keyCode: 354
+  _keyCode: 45
   _buttonToBind: {fileID: 1471523141}
   _seatchBar: {fileID: 1257172008}
   _currentKey: {fileID: 575565600}

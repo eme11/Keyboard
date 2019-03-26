@@ -39,6 +39,7 @@ public class BindKeyToButton : MonoBehaviour {
 	}
 
 	private string GetLastCharacter(string word){
+		Debug.Log ("7.1");
 		int length = word.Length;
 		string lastChar = "";
 		switch (length) {
@@ -68,6 +69,7 @@ public class BindKeyToButton : MonoBehaviour {
 	}
 
 	private bool IsSpecialCase(string special){
+		Debug.Log ("7.2");
 		if (special == "-")
 			return true;
 		else if (special == "*")
