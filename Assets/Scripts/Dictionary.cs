@@ -18,17 +18,7 @@ public class Dictionary : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		_content = new List<string> ();
-		_content.Add ("dummy");
-		_content.Add ("hello");
-		_content.Add ("world");
-		_content.Add ("foo");
-		_content.Add ("bar");
-		_content.Add ("baaar");
-		_content.Add ("barr");
-		_content.Add ("babbr");
-		_content.Add ("babyy");
-		_content.Add ("barrrrrr");
-		_content.Add ("baar");
+		Load ();
 
 		_addNewWord = GetComponent<Button> ();
 		_addNewWord.onClick.AddListener(OnClickTask);
@@ -113,9 +103,30 @@ public class Dictionary : MonoBehaviour {
 		return possibleMatches;
 	}
 
-	public void AddToDictionary(string newWord){
+	public void AddToDictionary(string word){
 		Debug.Log ("5.2");
-		_content.Add (newWord);
+
+		int counter = PlayerPrefs.GetInt ("size", 0);
+		++counter;
+
+		_content.Add (word);
+
+		PlayerPrefs.SetString ("dictionary" + counter, word);
+		PlayerPrefs.SetInt ("size", counter);
+
+		PlayerPrefs.Save ();
+	}
+
+	public void Load(){
+		int counter = PlayerPrefs.GetInt ("size", 0);
+
+		for (int i = 0; i <= counter; ++i) {
+			Debug.Log ("1.Loading data= " + i);
+
+			string word = PlayerPrefs.GetString ("dictionary" + i);
+			Debug.Log ("2. The Value= " + word);
+			_content.Add (word);
+		}
 	}
 
 }
