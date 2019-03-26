@@ -67,8 +67,9 @@ public class Dictionary : MonoBehaviour {
 		ClearUI ();
 
 		int count = 0;
+
 		foreach (string tmp in dropDown) {
-			++count;
+			count++;
 			if (count == 1)
 				AddTextToFieldOfButton (_suggestion1, tmp);
 			else if (count == 2)
@@ -106,6 +107,9 @@ public class Dictionary : MonoBehaviour {
 	public void AddToDictionary(string word){
 		Debug.Log ("5.2");
 
+		if (word == "" || word == " ") 
+			return;
+
 		int counter = PlayerPrefs.GetInt ("size", 0);
 		++counter;
 
@@ -134,7 +138,7 @@ public class Dictionary : MonoBehaviour {
 		PlayerPrefs.Save ();
 		_content.Clear ();
 		ClearUI ();
-
+		_input.text = "";
 	}
 
 }
