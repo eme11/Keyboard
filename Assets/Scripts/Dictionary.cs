@@ -129,4 +129,12 @@ public class Dictionary : MonoBehaviour {
 		}
 	}
 
+	public void DeleteAll(){
+		PlayerPrefs.DeleteAll ();
+		PlayerPrefs.Save ();
+		_content.Clear ();
+		ClearUI ();
+
+	}
+
 }
