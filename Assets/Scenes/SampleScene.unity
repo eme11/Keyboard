@@ -3208,18 +3208,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: E
+  m_Text: 
 --- !u!222 &575565601
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9169,17 +9169,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1634732881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75c6d816b1be1a345a390e1a30feda54, type: 3}
+  m_Script: {fileID: 11500000, guid: 514a62348153c3a478a0a4e1cebbbef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _input: {fileID: 1257172008}
-  _addNewWord: {fileID: 1634732884}
-  _suggestion1: {fileID: 2097746740}
-  _suggestion2: {fileID: 605889917}
-  _suggestion3: {fileID: 1639769953}
-  _suggestion4: {fileID: 1956890520}
-  _suggestion5: {fileID: 628658720}
-  _suggestion6: {fileID: 1017352657}
+  _delete: {fileID: 0}
+  _dictionary: {fileID: 0}
 --- !u!114 &1634732884
 MonoBehaviour:
   m_ObjectHideFlags: 0
