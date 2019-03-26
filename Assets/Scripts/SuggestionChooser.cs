@@ -23,6 +23,8 @@ public class SuggestionChooser : MonoBehaviour {
 
 	void OnClickTask(){
 		string value = ExtractTextFromButton ();
+		if (value == "")
+			return;
 		_searchBar.text = value;
 	}
 }
