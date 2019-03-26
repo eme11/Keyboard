@@ -9,12 +9,10 @@ public class BindKeyToButton : MonoBehaviour {
 	public Button _buttonToBind;
 	public InputField _seatchBar;
 	public Text _currentKey;
-	public Button _addToDictionary;
 
 	void Awake()
 	{
 		_buttonToBind = GetComponent<Button> ();
-		_addToDictionary = GetComponent<Button> ();
 	}
 	void Start () {
 		_buttonToBind.onClick.AddListener(OnClickTask);
@@ -23,12 +21,14 @@ public class BindKeyToButton : MonoBehaviour {
 
 	void OnClickTask(){
 		Debug.Log ("on click - key");
-		string keyValue = getTextFromButton ();
-		handleFullFading (keyValue);
-		if (isBackSpace (keyValue))
-			handleBackSpace ();
-		else if (isEnter (keyValue)) {
-			handleEnter ();
+		string keyValue = GetTextFromButton ();
+
+		HandleFullFading (keyValue);
+
+		if (IsBackSpace (keyValue))
+			HandleBackSpace ();
+		else if (IsEnter (keyValue)) {
+			HandleEnter ();
 		} else _seatchBar.text += keyValue;
 
 		string word = _seatchBar.text.ToString ();
@@ -61,7 +61,6 @@ public class BindKeyToButton : MonoBehaviour {
 		string lastChar = GetLastCharacter (word);
 		if (IsSpecialCase (lastChar)) {
 			Debug.Log ("should add to dictionary");
-			_addToDictionary.onClick.Invoke();
 		}
 	}
 
@@ -88,18 +87,18 @@ public class BindKeyToButton : MonoBehaviour {
 			return false;
 	}
 
-	private bool isBackSpace(string keyVal){
+	private bool IsBackSpace(string keyVal){
 		Debug.Log ("is backspace");
 		return keyVal.Equals ("<----");		
 	}
 
-	private bool isEnter(string keyVal){
+	private bool IsEnter(string keyVal){
 		Debug.Log ("is enter");
 		return keyVal.Equals ("enter");
 		//invoke enter
 	}
 
-	private void handleBackSpace(){
+	private void HandleBackSpace(){
 		Debug.Log ("handle backspace");
 		string content = _seatchBar.text.ToString ();
 		content = content.Substring (0, content.Length - 1);
@@ -107,13 +106,12 @@ public class BindKeyToButton : MonoBehaviour {
 		_seatchBar.text = content;
 	}
 
-	private void handleEnter(){
+	private void HandleEnter(){
 		Debug.Log ("handle enter");
 		// _addToDictionary.onClick.Invoke ();
 	}
 
-	private string getTextFromButton(){
-		Debug.Log ("get text from button");
+	private string GetTextFromButton(){
 		Text tmp = _buttonToBind.GetComponentInChildren<Text>();
 		string keyVal = tmp.text.ToString ().ToLower ();
 		switch (keyVal) {
@@ -123,35 +121,24 @@ public class BindKeyToButton : MonoBehaviour {
 		default:
 			break;
 		}
+		Debug.Log ("keyval= " + keyVal);
 		return keyVal;
 	}
 
 	void Update () {
 		if (Input.GetKeyDown (_keyCode)) { // when pressing
 			_buttonToBind.onClick.Invoke ();
-		}else if (Input.GetKeyUp(_keyCode)){
-			
-		}else if (Input.GetKey (_keyCode)) {
-			//when holding the key for longer
-			StartDrawing();
 		}
-
 	}
 
-	void FadeColor()
-	{
-		Graphic graphic = GetComponent<Graphic> ();
-		graphic.CrossFadeColor (Color.black, _buttonToBind.colors.fadeDuration, true, true);
-	}
 	void StartDrawing()
 	{
 		// TO DO : implement later
 	}
 
-	void handleFullFading(string keyValue){
+	void HandleFullFading(string keyValue){
 		Debug.Log ("handle funn fading!");
 		keyValue = keyValue == " " ? keyValue = "'  '" : keyValue;
 		_currentKey.text = keyValue.ToUpper();
-		// WaitForSeconds (1);
 	}
 }

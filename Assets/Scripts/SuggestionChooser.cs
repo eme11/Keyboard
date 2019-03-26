@@ -25,9 +25,4 @@ public class SuggestionChooser : MonoBehaviour {
 		string value = ExtractTextFromButton ();
 		_searchBar.text = value;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

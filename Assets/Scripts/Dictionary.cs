@@ -41,8 +41,7 @@ public class Dictionary : MonoBehaviour {
 
 	void OnInputFieldTask(){
 		string word = _input.text;
-		List<string> possibileMatches = findSuggestions (word);
-		// Debug.Log ("1." + possibileMatches [0]);
+		List<string> possibileMatches = FindSuggestions (word);
 		handleUIElements (possibileMatches);
 	}
 
@@ -64,7 +63,7 @@ public class Dictionary : MonoBehaviour {
 		tmp.text = suggestion;
 	}
 
-	private void clearUI(){
+	private void ClearUI(){
 		ClearTextFieldOfBUtton (_suggestion1);
 		ClearTextFieldOfBUtton (_suggestion2);
 		ClearTextFieldOfBUtton (_suggestion3);
@@ -75,8 +74,7 @@ public class Dictionary : MonoBehaviour {
 
 	void handleUIElements(List<string> dropDown)
 	{
-		Debug.Log ("UI");
-		clearUI ();
+		ClearUI ();
 
 		int count = 0;
 		foreach (string tmp in dropDown) {
@@ -99,10 +97,9 @@ public class Dictionary : MonoBehaviour {
 	}
 		
 
-	public List<string> findSuggestions(string word)
+	public List<string> FindSuggestions(string word)
 	{
 		if (word == null) {
-			Debug.Log ("empty");
 			return null;
 		}
 		List<string> possibleMatches = new List<string> ();
@@ -110,18 +107,13 @@ public class Dictionary : MonoBehaviour {
 		foreach (string currentWord in _content) {
 			if (currentWord.Substring(0,length < currentWord.Length ? length : currentWord.Length ).Equals(word))
 			{
-				Debug.Log ("found something");
 				possibleMatches.Add(currentWord);
 			}
 		}
 		return possibleMatches;
 	}
 
-	void Update(){
-	}
-
 	void AddToDictionary(string newWord){
-		//To do : save to file as well
 		_content.Add (newWord);
 	}
 
