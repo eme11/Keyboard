@@ -61,10 +61,10 @@ public class BindKeyToButton : MonoBehaviour {
 	}
 
 	private void HandleEndOfTheWord(string word){
-		Debug.Log ("7");
+		Debug.Log ("7.2");
 		string lastChar = GetLastCharacter (word);
 		if (IsSpecialCase (lastChar)) {
-			Debug.Log ("should add to dictionary");
+			AddToDictionary ();
 		}
 	}
 
@@ -116,10 +116,7 @@ public class BindKeyToButton : MonoBehaviour {
 
 	private void HandleEnter(){
 		Debug.Log ("5.1");
-		string word = _seatchBar.text.ToString ();
-		Debug.Log ("content = " + word);
-		_dictionary.AddToDictionary (word);
-		_seatchBar.text = "";
+		AddToDictionary ();
 	}
 
 	private string GetTextFromButton(){
@@ -149,4 +146,11 @@ public class BindKeyToButton : MonoBehaviour {
 		string tmp = _keyCode.ToString()== "Return" ? "Enter" : _keyCode.ToString();
 		_currentKey.text = tmp;
 	}
+
+	void AddToDictionary(){
+		string word = _seatchBar.text.ToString ();
+		_dictionary.AddToDictionary (word);
+		_seatchBar.text = "";
+	}
+
 }
