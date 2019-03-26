@@ -48,7 +48,7 @@ public class Dictionary : MonoBehaviour {
 	void OnClickTask()
 	{
 		// TO DO : make button add
-		string word = _input.text;
+		string word = _input.text.ToString() ;
 		AddToDictionary (word);
 		_input.text = "";
 	}
@@ -113,7 +113,8 @@ public class Dictionary : MonoBehaviour {
 		return possibleMatches;
 	}
 
-	void AddToDictionary(string newWord){
+	public void AddToDictionary(string newWord){
+		Debug.Log ("5.2");
 		_content.Add (newWord);
 	}
 

@@ -9,10 +9,12 @@ public class BindKeyToButton : MonoBehaviour {
 	public Button _buttonToBind;
 	public InputField _seatchBar;
 	public Text _currentKey;
+	public Dictionary _dictionary;
 
 	void Awake()
 	{
 		_buttonToBind = GetComponent<Button> ();
+		_dictionary = GameObject.Find ("AddToDictionary").GetComponent<Dictionary> ();
 	}
 	void Start () {
 		_buttonToBind.onClick.AddListener(OnClickTask);
@@ -20,16 +22,17 @@ public class BindKeyToButton : MonoBehaviour {
 	}
 
 	void OnClickTask(){
-		Debug.Log ("on click - key");
+		Debug.Log ("1");
 		string keyValue = GetTextFromButton ();
 
-		HandleFullFading (keyValue);
+		HandleShowingCurrentKey (keyValue);
 
 		if (IsBackSpace (keyValue))
 			HandleBackSpace ();
 		else if (IsEnter (keyValue)) {
 			HandleEnter ();
 		} else _seatchBar.text += keyValue;
+		Debug.Log ("6");
 
 		string word = _seatchBar.text.ToString ();
 		HandleEndOfTheWord (word);
@@ -37,7 +40,6 @@ public class BindKeyToButton : MonoBehaviour {
 
 	private string GetLastCharacter(string word){
 		int length = word.Length;
-		Debug.Log ("length = " + length);
 		string lastChar = "";
 		switch (length) {
 		case 0:
@@ -58,6 +60,7 @@ public class BindKeyToButton : MonoBehaviour {
 	}
 
 	private void HandleEndOfTheWord(string word){
+		Debug.Log ("7");
 		string lastChar = GetLastCharacter (word);
 		if (IsSpecialCase (lastChar)) {
 			Debug.Log ("should add to dictionary");
@@ -88,40 +91,43 @@ public class BindKeyToButton : MonoBehaviour {
 	}
 
 	private bool IsBackSpace(string keyVal){
-		Debug.Log ("is backspace");
+		Debug.Log ("4");
 		return keyVal.Equals ("<----");		
 	}
 
 	private bool IsEnter(string keyVal){
-		Debug.Log ("is enter");
+		Debug.Log ("5");
 		return keyVal.Equals ("enter");
-		//invoke enter
+	}
+
+	private bool IsSpace(string keyVal){
+		Debug.Log ("2.1");
+		return keyVal.Equals ("space");
 	}
 
 	private void HandleBackSpace(){
-		Debug.Log ("handle backspace");
+		Debug.Log ("4.1");
 		string content = _seatchBar.text.ToString ();
 		content = content.Substring (0, content.Length - 1);
-		Debug.Log ("content= " + content);
 		_seatchBar.text = content;
 	}
 
 	private void HandleEnter(){
-		Debug.Log ("handle enter");
-		// _addToDictionary.onClick.Invoke ();
+		Debug.Log ("5.1");
+		string word = _seatchBar.text.ToString ();
+		Debug.Log ("content = " + word);
+		_dictionary.AddToDictionary (word);
+		_seatchBar.text = "";
 	}
 
 	private string GetTextFromButton(){
+		Debug.Log ("2");
 		Text tmp = _buttonToBind.GetComponentInChildren<Text>();
 		string keyVal = tmp.text.ToString ().ToLower ();
-		switch (keyVal) {
-		case "space":
+
+		if (IsSpace (keyVal)) {
 			keyVal = " ";
-			break;
-		default:
-			break;
 		}
-		Debug.Log ("keyval= " + keyVal);
 		return keyVal;
 	}
 
@@ -136,9 +142,9 @@ public class BindKeyToButton : MonoBehaviour {
 		// TO DO : implement later
 	}
 
-	void HandleFullFading(string keyValue){
-		Debug.Log ("handle funn fading!");
-		keyValue = keyValue == " " ? keyValue = "'  '" : keyValue;
-		_currentKey.text = keyValue.ToUpper();
+	void HandleShowingCurrentKey(string keyValue){
+		Debug.Log ("3");
+		string tmp = _keyCode.ToString()== "Return" ? "Enter" : _keyCode.ToString();
+		_currentKey.text = tmp;
 	}
 }
